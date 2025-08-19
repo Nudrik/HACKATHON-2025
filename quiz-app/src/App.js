@@ -34,6 +34,13 @@ function App() {
     setUserAnswers([]);
   };
 
+  const restartSameQuiz = () => {
+    setGameState('quiz');
+    setFinalScore(0);
+    setTotalQuestions(0);
+    setUserAnswers([]);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -60,6 +67,7 @@ function App() {
             totalQuestions={totalQuestions}
             userAnswers={userAnswers}
             onRestart={restartQuiz}
+            onRestartSameQuiz={restartSameQuiz}
           />
         )}
       </main>
