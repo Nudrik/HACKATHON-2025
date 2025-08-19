@@ -45,7 +45,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>🎯 Quiz Master</h1>
-        <p>Test your knowledge with interactive quizzes!</p>
+        
       </header>
 
       <main className="App-main">
